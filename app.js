@@ -15,15 +15,26 @@ const fs = require ('fs');
     }
     console.log('name changed')
 });*/
-
-fs.appendFile('text.html', '<p>data to add file</p>', (err) => {
+/*fs.appendFile('text.html', '<p>data to add file</p>', (err) => {
     if (err){
         throw err;
     }
     console.log ('Data add file saccesfully')
-});
+});*/
 
-//fs.writeFile...
+/*fs.writeFile('text.html', 'new datafile', (err) =>{
+    if (err){
+        throw err
+    }
+    console.log('new data file...')
+})*/
+
+fs.unlink('text.html', (err) =>{
+    if (err){
+        throw err
+    }
+    console.log('Delete File')
+})
 
 //console.log(saludar("Andriu"));
 //console.log(saludarHelloWorld());
